@@ -1,0 +1,29 @@
+2022-06-10 19:07:51 — ta_lib.core.utils — INFO — initialize_random_seed:481 — Initialized Random Seed : 0
+2022-06-10 19:07:51 — ta_lib.core.context — INFO — create_context:48 — Context created from /home/mythiliravi/regression-py/production/conf/config.yml
+2022-06-10 19:07:51 — ta_lib.core.context — INFO — create_context:49 — Package version : 1.0.0
+2022-06-10 19:08:00 — ta_lib.core.utils — INFO — initialize_random_seed:481 — Initialized Random Seed : 0
+2022-06-10 19:08:00 — ta_lib.core.context — INFO — create_context:48 — Context created from /home/mythiliravi/regression-py/production/conf/config.yml
+2022-06-10 19:08:00 — ta_lib.core.context — INFO — create_context:49 — Package version : 1.0.0
+2022-06-10 19:08:00 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : clean-base-tables
+2022-06-10 19:08:00 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : housing : task-0c11895d-57d2-4331-9db2-4d7e735126af
+2022-06-10 19:08:00 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-0c11895d-57d2-4331-9db2-4d7e735126af : 0.10527801513671875 seconds
+2022-06-10 19:08:00 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-10 19:08:00 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : train-test-split
+2022-06-10 19:08:00 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : train-test : task-e20e1de8-5079-4779-8067-c9eed561ea0c
+2022-06-10 19:08:01 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-e20e1de8-5079-4779-8067-c9eed561ea0c : 0.30578041076660156 seconds
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : feature-pipelines
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : transform-features : task-9d461867-e39a-480a-9fa8-e11689d728af
+2022-06-10 19:08:01 — ta_lib.core.utils — INFO — save_pipeline:53 — Saving pipeline to location /home/mythiliravi/regression-py/artifacts/curated_columns.joblib
+2022-06-10 19:08:01 — ta_lib.core.utils — INFO — save_pipeline:53 — Saving pipeline to location /home/mythiliravi/regression-py/artifacts/features.joblib
+2022-06-10 19:08:01 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-9d461867-e39a-480a-9fa8-e11689d728af : 0.07964491844177246 seconds
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : model-creation
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : train-model : task-3e22eab7-67a3-43a9-a8e7-ade8472ee656
+2022-06-10 19:08:01 — ta_lib.core.utils — INFO — save_pipeline:53 — Saving pipeline to location /home/mythiliravi/regression-py/artifacts/train_pipeline.joblib
+2022-06-10 19:08:01 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-3e22eab7-67a3-43a9-a8e7-ade8472ee656 : 0.13739466667175293 seconds
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : model-predict
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : score-model : task-4e5ded33-f9c5-4c05-9f19-2b2989d6d1f3
+2022-06-10 19:08:01 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-4e5ded33-f9c5-4c05-9f19-2b2989d6d1f3 : 0.05092477798461914 seconds
+2022-06-10 19:08:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None

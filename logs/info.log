@@ -1,0 +1,38 @@
+2022-06-09 18:51:33 — ta_lib.core.utils — INFO — initialize_random_seed:481 — Initialized Random Seed : 0
+2022-06-09 18:51:33 — ta_lib.core.context — INFO — create_context:48 — Context created from /home/mythiliravi/regression-py/production/conf/config.yml
+2022-06-09 18:51:33 — ta_lib.core.context — INFO — create_context:49 — Package version : 1.0.0
+2022-06-09 18:51:47 — ta_lib.core.utils — INFO — initialize_random_seed:481 — Initialized Random Seed : 0
+2022-06-09 18:51:47 — ta_lib.core.context — INFO — create_context:48 — Context created from /home/mythiliravi/regression-py/production/conf/config.yml
+2022-06-09 18:51:47 — ta_lib.core.context — INFO — create_context:49 — Package version : 1.0.0
+2022-06-09 18:51:47 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : clean-base-tables
+2022-06-09 18:51:47 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : product : task-8a4b2e23-de32-4411-804f-7dd42fa68ebe
+2022-06-09 18:51:47 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-8a4b2e23-de32-4411-804f-7dd42fa68ebe : 0.4001326560974121 seconds
+2022-06-09 18:51:47 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-09 18:51:47 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : orders : task-d84e83c2-41ad-4453-b1be-8cdd934d3fb7
+2022-06-09 18:51:55 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-d84e83c2-41ad-4453-b1be-8cdd934d3fb7 : 8.153496742248535 seconds
+2022-06-09 18:51:55 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-09 18:51:55 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : clean-derivative-tables
+2022-06-09 18:51:55 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : sales : task-3e8b446e-1b48-42dc-992c-a9513cfbf543
+2022-06-09 18:51:56 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-3e8b446e-1b48-42dc-992c-a9513cfbf543 : 1.0710124969482422 seconds
+2022-06-09 18:51:56 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-09 18:51:56 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : train-test-split
+2022-06-09 18:51:56 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : train-test : task-ac95d51a-f2ac-45f9-8702-6776feeb640a
+2022-06-09 18:52:01 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-ac95d51a-f2ac-45f9-8702-6776feeb640a : 5.072157144546509 seconds
+2022-06-09 18:52:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-09 18:52:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : feature-pipelines
+2022-06-09 18:52:01 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : transform-features : task-c7ab928a-dc1f-443f-b0e9-2584231b77f6
+2022-06-09 18:52:02 — feature_engineering — WARNING — transform_features:97 — The data has been sample by fraction: 0.1
+2022-06-09 18:52:04 — ta_lib.core.utils — INFO — save_pipeline:53 — Saving pipeline to location /home/mythiliravi/regression-py/artifacts/curated_columns.joblib
+2022-06-09 18:52:04 — ta_lib.core.utils — INFO — save_pipeline:53 — Saving pipeline to location /home/mythiliravi/regression-py/artifacts/features.joblib
+2022-06-09 18:52:04 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-c7ab928a-dc1f-443f-b0e9-2584231b77f6 : 2.6372995376586914 seconds
+2022-06-09 18:52:04 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-09 18:52:04 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : model-creation
+2022-06-09 18:52:04 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : train-model : task-50647ebf-246a-492b-baad-e2ec65e6986b
+2022-06-09 18:52:04 — training — WARNING — train_model:41 — The data has been sample by fraction: 0.1
+2022-06-09 18:52:07 — ta_lib.core.utils — INFO — save_pipeline:53 — Saving pipeline to location /home/mythiliravi/regression-py/artifacts/train_pipeline.joblib
+2022-06-09 18:52:07 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-50647ebf-246a-492b-baad-e2ec65e6986b : 3.0344862937927246 seconds
+2022-06-09 18:52:07 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
+2022-06-09 18:52:07 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:78 — Running Stage : model-predict
+2022-06-09 18:52:07 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:80 — Running task : score-model : task-89a73d4c-1b65-410c-bfea-b6991b8d375f
+2022-06-09 18:52:07 — ta_lib.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-89a73d4c-1b65-410c-bfea-b6991b8d375f : 0.532149076461792 seconds
+2022-06-09 18:52:07 — ta_lib.core.pipelines.job_runner — INFO — sequential_executor:89 — None
